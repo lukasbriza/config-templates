@@ -1,0 +1,6 @@
+{
+  "extends": "../ts-config/library.json",
+  "include": [".eslintrc.cjs", "./*.js", "src/**/*"],
+  "exclude": ["dist", "node_modules"],
+  "references": []
+}

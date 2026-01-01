@@ -1,0 +1,14 @@
+{
+  "extends": "./ts-config/base.json",
+  "compilerOptions": {
+    "checkJs": true
+  },
+  "include": ["./*.ts", "./*.js"],
+  "exclude": [
+    "node_modules",
+    "scripts",
+    "eslint-config",
+    "prettier-config",
+    "ts-config"
+  ]
+}

@@ -1,0 +1,10 @@
+node_modules
+.husky
+.editorconfig
+.nvmrc
+commitlint.config.js
+Dockerfile
+docker-compose-*
+eslint-config/README.md
+prettier-config/README.md
+ts-config/README.md¨

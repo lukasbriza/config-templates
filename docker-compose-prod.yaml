@@ -1,0 +1,24 @@
+# NEED TO DEFINE THESE VARIABLES IN .ENV #
+##########################################
+# - CONFIG_TEMPLATES_PAT
+# - NODE_ENV
+
+services:
+  publish:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+       - TAG=base-latest
+    container_name: config-templates-publish-prod
+    restart: no
+    stdin_open: true  # -i flag
+    tty: true         # -t flag
+    environment:
+      - NODE_ENV=${NODE_ENV}
+      - NPM_TOKEN=${CONFIG_TEMPLATES_PAT}
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '10m'
+        max-file: '3'

@@ -1,0 +1,7 @@
+{
+  "extends": "../ts-config/library.json",
+  "compilerOptions": { "module": "CommonJS", "moduleResolution": "node" },
+  "include": [".eslintrc.js", "index.d.ts", "./*.js", "src/**/*"],
+  "exclude": ["dist", "node_modules"],
+  "references": []
+}
