@@ -11,9 +11,7 @@ services:
       args:
        - TAG=base-latest
     container_name: config-templates-publish-prod
-    restart: no
-    stdin_open: true  # -i flag
-    tty: true         # -t flag
+    restart: "no"
     environment:
       - NODE_ENV=${NODE_ENV}
       - NPM_TOKEN=${CONFIG_TEMPLATES_PAT}
